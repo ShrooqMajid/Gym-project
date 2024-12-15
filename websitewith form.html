@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Website</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to FitLife Gym</h1>
+    </header>
+
+    <nav>
+        <a href="#about">About Us</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>FitLife Gym is your one-stop shop for achieving your fitness goals. Equipped with cutting-edge equipment and boasting a team of experienced trainers, we provide the ideal environment to help you reach your full potential. Whether you're a seasoned athlete or just starting your fitness journey, we offer a wide range of classes, personalized training plans, and a supportive community to guide you every step of the way. Join FitLife Gym today and discover the path to a healthier, stronger, and more confident you.</p>
+        <img src="img/about-us.jpg" alt="About FitLife Gym">
+    </section>
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="service">
+            <img src="img/personal-trainer.jpg" alt="Personal Training">
+            <h3>Personal Training</h3>
+            <p>Get one-on-one coaching to tailor workouts to your needs.</p>
+        </div>
+        <div class="service">
+            <img src="img/group-classes.jpg" alt="Group Classes">
+            <h3>Group Classes</h3>
+            <p>Join exciting group sessions like yoga, Zumba, and HIIT.</p>
+        </div>
+        <div class="service">
+            <img src="img/nutrition-plans.jpg" alt="Nutrition Plans">
+            <h3>Nutrition Plans</h3>
+            <p>Customized meal plans to complement your fitness journey.</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: info@fitlifegym.com</p>
+        <p>Phone: +123 456 7890</p>
+        <p>Address: 123 Fitness Avenue, Healthy City</p>
+
+        <form action="https://example.com/submit-form" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 FitLife Gym. All rights reserved.</p>
+    </footer>
+
+    <button class="scroll-to-top" id="scrollToTop">&#8679;</button>
+
+    <script>
+        // Scroll-to-Top Button
+        const scrollToTopBtn = document.getElementById('scrollToTop');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 200) {
+                scrollToTopBtn.style.display = 'block';
+            } else {
+                scrollToTopBtn.style.display = 'none';
+            }
+        });
+
+        scrollToTopBtn.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
+</body>
+</html>
